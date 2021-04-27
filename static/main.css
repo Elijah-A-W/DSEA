@@ -1,0 +1,35 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form{
+    width: 80%;
+}
+form{
+    width: 40%;
+    margin: 100px auto;
+    background-color: dodgerblue;
+    text-align: center;
+}
+
+.form-group{
+    padding: 10px;
+}
+.container{
+    display: flex;
+}
+
+.form-control{
+    width: 90%;
+    border: none;
+    padding: 10px;
+}
+.predict{
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+}
+.pred{
+    text-align: center;
+
+}

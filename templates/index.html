@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/main.css">
+    <title>Predict</title>
+</head>
+
+<body>
+   <div class="container">
+        <div class="form">
+            <form action="/" method="POST">
+                <h1>Make Predictions</h1>
+                <div class="form-group">
+                    <label for="Item_Weight">Item_Weight</label>
+                    <input type="number" step="any" class="form-control" name="Item_Weight">
+                </div>
+                <div class="form-group">
+                    <label for="Item_Visibility">Item_Visibility</label>
+                    <input type="number" step="any" class="form-control" name="Item_Visibility">
+                </div>
+                <div class="form-group">
+                    <label for="Item_MRP">Item_MRP</label>
+                    <input type="number" step="any" class="form-control" name="Item_MRP">
+                </div>
+                <div class="form-group">
+                    <label for="Outlet_Establishment_Year">Outlet_Establishment_Year</label>
+                    <input type="number" class="form-control" name="Outlet_Establishment_Year">
+                </div>
+                <div class="form-group">
+                    <button type="submit">Predict</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="predict">
+            <p class="pred">
+
+                Predicted Amount : {{prediction}}
+            
+            </p>
+        </div>
+   </div>
+
+
+    
+    <script src="static/index.js">
+
+    </script>
+</body>
+
+</html>
