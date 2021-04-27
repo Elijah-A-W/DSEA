@@ -1,17 +1,19 @@
-import pickle
-from sklearn.externals import joblib
-from api import api
-import numpy as np
-
-filename = 'knn_model.sav'
-
-loaded_model = pickle.load(open(filename, 'rb'))
 
 from flask import Flask,render_template,request,redirect
-
 app=Flask(__name__,static_folder='./static')
-app.register_blueprint(api,url_prefix='/api')
 
+
+import pickle
+from sklearn.externals import joblib
+
+#importing the numpy package
+import numpy as np
+
+"""Calling the file name of the saved model"""
+filename = 'knn_model.sav'
+
+"""loading the knn saved model"""
+loaded_model = pickle.load(open(filename, 'rb'))
 
 
 @app.route('/',methods=["GET","POST"])
